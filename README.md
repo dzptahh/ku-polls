@@ -1,2 +1,8 @@
 # ku-polls
-Web application for polls and surveys at Kasetsart University 
+Kasetsart University's web application for polls and surveys. Django is a Python framework.
+
+## Install and Run
+To be added.
+
+## Project Documents
+All project documents are in the [Project Wiki](../../wiki/Home)
