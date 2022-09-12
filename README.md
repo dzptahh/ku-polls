@@ -12,5 +12,6 @@ All project documents are in the [Project Wiki](../../wiki/Home)
 + [Requirements](../../wiki/Requirement)
 + [Project Plan](../../wiki/Project%20Plan)
 + [Iteration 1 Plan](../../wiki/Iteration-1-Plan) and [Task Board](https://github.com/users/dzptahh/projects/1)
++ [Itertion 2 Plan]((../../wiki/Iteration-2-Plan)) and [Task Board](https://github.com/users/dzptahh/projects/1/views/3)
 
 > [django-tutorial](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
