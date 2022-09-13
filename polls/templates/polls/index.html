@@ -2,12 +2,22 @@
 
 <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
+<br>
+{% if messages %}
+<ul class="error_messages">
+  {% for msg in messages %}
+    <p class="{{msg.tags}}">{{ msg }}</p>
+  {% endfor %}
+</ul>
 {% endif %}
+
+    {% if latest_question_list %}
+        <ul>
+            {% for question in latest_question_list %}
+            <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+            <a href="{% url 'polls:results' question.id %}"> <input type="button" value="Result"> </a>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
