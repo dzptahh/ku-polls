@@ -58,7 +58,7 @@ class QuestionModelTests(TestCase):
     #     pub = timezone.now()
     #     recent_question = Question(pub_date=pub, end_date=pub + datetime.timedelta(hours=4, minutes=59, seconds=59))
     #     self.assertIs(recent_question.can_vote(), True)
-
+    # wait
 
 def create_question(question_text, days):
     """
