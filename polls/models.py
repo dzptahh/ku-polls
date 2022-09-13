@@ -1,5 +1,3 @@
-from django.db import models
-
 # Create your models here.
 import datetime
 from django.db import models
@@ -20,7 +18,7 @@ class Question(models.Model):
 
     def is_published(self):
         current = timezone.now()
-        return current - datetime.timedelta(days=1) <= self.pub_date <= current
+        return current >= self.pub_date
 
     def can_vote(self):
         current = timezone.now()
