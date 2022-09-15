@@ -1,5 +1,5 @@
 ## Online Polls And Surveys for Kasetsart University
-Kasetsart University's web application for polls and surveys. Django is a Python framework [Django Tutorial Project](django-tutorial).
+Kasetsart University's web application for polls and surveys. Django is a Python framework [Django Tutorial Project](https://docs.djangoproject.com/en/4.1/intro/tutorial01/).
 
 This application is part of the [Individual Software Process](https://cpske.github.io/ISP) course at Kasetsart University.
 
@@ -14,4 +14,3 @@ All project documents are in the [Project Wiki](../../wiki/Home)
 + [Iteration 1 Plan](../../wiki/Iteration-1-Plan)
 + [Iteration 2 Plan](https://github.com/dzptahh/ku-polls.wiki.git)
 + [Iteration 3 Plan](https://github.com/dzptahh/ku-polls.wiki.git)
-> [django-tutorial](https://docs.djangoproject.com/en/4.1/intro/tutorial01/)
