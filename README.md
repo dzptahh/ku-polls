@@ -9,8 +9,8 @@ This application is part of the [Individual Software Process](https://cpske.gith
 ## Project Documents
 All project documents are in the [Project Wiki](../../wiki/Home)
 + [Vision Statement](../../wiki/Vision%20Statement)
-+ [Requirements](../../wiki/Requirement)
-+ [Project Plan](../../wiki/Project%20Plan)
++ [Requirements](https://github.com/dzptahh/ku-polls.wiki.git)
++ [Project Plan](https://github.com/dzptahh/ku-polls.wiki.git)
 + [Iteration 1 Plan](../../wiki/Iteration-1-Plan)
 + [Iteration 2 Plan](https://github.com/dzptahh/ku-polls.wiki.git)
 + [Iteration 3 Plan](https://github.com/dzptahh/ku-polls.wiki.git)
