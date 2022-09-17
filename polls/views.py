@@ -1,3 +1,4 @@
+from django.contrib.auth import logout
 from django.http import HttpResponseRedirect, Http404
 from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse
@@ -5,7 +6,9 @@ from django.views import generic
 from django.utils import timezone
 from .models import Choice, Question
 from django.contrib import messages
-
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db import models
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
@@ -21,7 +24,8 @@ class IndexView(generic.ListView):
         ).order_by('-pub_date')[:5]
 
 
-class DetailView(generic.DetailView):
+class DetailView(LoginRequiredMixin, generic.DetailView):
+    """Class based view for viewing a poll."""
     model = Question
     template_name = 'polls/detail.html'
 
@@ -45,9 +49,20 @@ class ResultsView(generic.DetailView):
     template_name = 'polls/results.html'
 
 
+@login_required
+def logout(request):
+    # Log user out
+    logout(request)
+    return redirect('login')
+
+
 def vote(request, question_id):
+    """Vote for a choice on a question (poll)."""
     question = get_object_or_404(Question, pk=question_id)
     try:
+        user = request.user
+        if not user.is_authenticated:
+            return redirect('login')
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
@@ -56,6 +71,8 @@ def vote(request, question_id):
             'error_message': "You didn't select a choice.",
         })
     else:
+
+
         selected_choice.votes += 1
         selected_choice.save()
         # Always return an HttpResponseRedirect after successfully dealing
