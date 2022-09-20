@@ -31,4 +31,4 @@ All project documents are in the [Project Wiki](../../wiki/Home)
 | Username  | Password  |
 |-----------|-----------|
 |   test11  | fortest11|
-|   demo2   | demopass2 | # wait for update
+|   test22   | fortest22 | # wait for update
