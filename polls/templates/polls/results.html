@@ -1,7 +1,7 @@
 {% load static %}
-
 <link rel="stylesheet" href="{% static 'polls/style.css' %}">
 <fieldset>
+<center>
     <h1 style="color:606c38">{{ question.question_text }}</h1>
     <ul>
         <table>
@@ -11,10 +11,12 @@
             </tr>
         {% for choice in question.choice_set.all %}
             <tr style="color:dda15e">
-                <td>{{ choice.choice_text }}</td>
-                <td > &nbsp;&nbsp {{ choice.votes }}</td>
+                <td style="text-align:center">{{ choice.choice_text }}</td>
+                <td style="text-align:center"> &nbsp;&nbsp {{ choice.votes }}</td>
             </tr>
         {% endfor %}
         </table>
+</center>
 </fieldset>
 <a href="{% url 'polls:index'%}"> <input type="button" value="Back to List of Polls"> </a>
+
