@@ -6,17 +6,17 @@ This application is part of the [Individual Software Process](https://cpske.gith
 ## Install and Run
 Clone this repository
 
-`git clone https://github.com/dzptahh/ku-polls.git`
-then
+``` git clone https://github.com/dzptahh/ku-polls.git ```
+<br> then
 
-`cd ku-polls`
+```cd ku-polls```
 
 You need to install this
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 You can run by using
-`python manage.py runserver`
+```python manage.py runserver```
 
 
 ## Project Documents
