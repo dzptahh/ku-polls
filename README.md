@@ -6,7 +6,7 @@ This application is part of the [Individual Software Process](https://cpske.gith
 ## Install and Run
 Clone this repository
 
-`git clone https://github.com/Savetang19/ku-polls.git`
+`git clone https://github.com/dzptahh/ku-polls.git`
 then
 
 `cd ku-polls`
