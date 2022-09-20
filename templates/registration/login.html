@@ -9,5 +9,13 @@
   <button type="submit">Login</button>
   <input type="hidden" name="next" value="{{next}}" />
 </form>
+{# If you have a password_reset template, then add here #}
+<p>
+<a href="{% url 'password_reset' %}"><input type="button" value="Forgot password?"></a>
+<a href="{% url 'signup' %}"><input type="button" value="Register"></a>
+
+
+
+</p>
 </body>
 </html>
