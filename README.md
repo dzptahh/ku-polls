@@ -17,5 +17,5 @@ All project documents are in the [Project Wiki](../../wiki/Home)
 
 | Username  | Password  |
 |-----------|-----------|
-|   demo1   | demopass1 |
+|   test11  | fortest11|
 |   demo2   | demopass2 | # wait for update
