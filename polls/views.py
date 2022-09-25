@@ -1,4 +1,3 @@
-
 from django.contrib.auth import logout
 
 from django.http import HttpResponseRedirect, Http404
@@ -15,11 +14,8 @@ from django.contrib.auth.models import User
 import logging
 from datetime import datetime
 
-
-
 from .models import Choice, Question
 from django.contrib import messages
-
 
 
 class IndexView(generic.ListView):
@@ -54,6 +50,7 @@ class DetailView(LoginRequiredMixin, generic.DetailView):
             messages.error(request, "This poll is not published.")
             return HttpResponseRedirect(reverse('polls:index'))
         return super().get(request, pk=pk)
+
 
 class ResultsView(generic.DetailView):
     model = Question
