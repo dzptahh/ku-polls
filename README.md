@@ -4,20 +4,35 @@ Kasetsart University's web application for polls and surveys. Django is a Python
 This application is part of the [Individual Software Process](https://cpske.github.io/ISP) course at Kasetsart University.
 
 ## Install and Run
-Clone this repository
+1. Clone this repository
 
-``` git clone https://github.com/dzptahh/ku-polls.git ```
-<br> then
+``` 
+git clone https://github.com/dzptahh/ku-polls.git
+```
+```
+cd ku-polls
+```
 
-```cd ku-polls```
+2. You need to install required package
 
-You need to install this
+```
+pip install -r requirements.txt
+```
+3. Don't forget to change file name `sample.env` to `.env`
+4. Before run the server, run migrations first
+```
+python manage.py migrate
+```
+5. Install data
+```
+python manage.py loaddata data/polls.json data/user.json
+```
 
-```pip install -r requirements.txt```
-
-You can run by using
-```python manage.py runserver```
-
+6. Then run the server. You can run by using
+```
+python manage.py runserver
+```
+The server : `http://127.0.0.1:8000/`
 
 ## Project Documents
 All project documents are in the [Project Wiki](../../wiki/Home)
