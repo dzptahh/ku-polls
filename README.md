@@ -1,5 +1,6 @@
 ## Online Polls And Surveys for Kasetsart University
 [![Python application](https://github.com/dzptahh/ku-polls/actions/workflows/python-app.yml/badge.svg)](https://github.com/dzptahh/ku-polls/actions/workflows/python-app.yml)
+[![codecov](https://codecov.io/gh/dzptahh/ku-polls/branch/Master/graph/badge.svg?token=HG1ZI1BOBR)](https://codecov.io/gh/dzptahh/ku-polls)
 
 Kasetsart University's web application for polls and surveys. Django is a Python framework [Django Tutorial Project](https://docs.djangoproject.com/en/4.1/intro/tutorial01/).
 
