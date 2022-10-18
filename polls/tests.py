@@ -38,6 +38,27 @@ class QuestionModelTests(TestCase):
         recent_question = Question(pub_date=time)
         self.assertIs(recent_question.was_published_recently(), True)
 
+    # def test_vote_with_future(self):
+    #     time = timezone.now() + datetime.timedelta(hours=23, minutes=59, seconds=59)
+    #     recent_question = Question(pub_date=time)
+    #     self.assertIs(recent_question.can_vote(), False)
+    #
+    # def test_vote_after_expire(self):
+    #     now = timezone.now()
+    #     recent_question = Question(pub_date=now - datetime.timedelta(hours=23, minutes=59, seconds=59),
+    #                                end_date=now - datetime.timedelta(hours=4, minutes=59, seconds=59))
+    #     self.assertIs(recent_question.can_vote(), False)
+    #
+    # def test_vote_exactly_end_date(self):
+    #     end = timezone.now()
+    #     recent_question = Question(pub_date=end - datetime.timedelta(hours=2, minutes=59, seconds=59), end_date=end)
+    #     self.assertIs(recent_question.can_vote(), True)
+    #
+    # def test_vote_exactly_pub_date(self):
+    #     pub = timezone.now()
+    #     recent_question = Question(pub_date=pub, end_date=pub + datetime.timedelta(hours=4, minutes=59, seconds=59))
+    #     self.assertIs(recent_question.can_vote(), True)
+    # wait
 
 def create_question(question_text, days):
     """
